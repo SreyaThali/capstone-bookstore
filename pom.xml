@@ -76,8 +76,6 @@
 	<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.9.1</version>
 				<artifactId>sonar-maven-plugin</artifactId>
     				<version>3.0.2</version>
 				<executions>
