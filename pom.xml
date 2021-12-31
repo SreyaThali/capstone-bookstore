@@ -8,10 +8,10 @@
   <name>ILP1UserMgmt Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-  <maven.compiler.source>1.8</maven.compiler.source>
-  <maven.compiler.target>1.8</maven.compiler.target>
   <sonar.organization>sreyathali</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <dependencies>
     <dependency>
@@ -76,8 +76,8 @@
 	<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>sonar-maven-plugin</artifactId>
-    				<version>3.0.2</version>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.9.1</version>
 				<executions>
 					<execution>
 						<id>add-integration-test-sources</id>
