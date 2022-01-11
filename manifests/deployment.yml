@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sreyathalicapstonebookstore 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sreyathalicapstonebookstore
+  template:
+    metadata:
+      labels:
+        app: sreyathalicapstonebookstore 
+    spec:
+      containers:
+        - name: sreyathalicapstonebookstore 
+          image: mycontainerregistry800.azurecr.io/sreyathalicapstonebookstore
+          ports:
+          - containerPort: 8080
